@@ -69,7 +69,7 @@ Vagrant.configure("2") do |config|
   #   apt-get install -y apache2
   # SHELL
 
-  config.vm.provision "shell", path: "./cms/setup.sh"
+  config.vm.provision "shell", path: "./cms/scripts/setup.sh"
 
   if Vagrant.has_plugin?("vagrant-vbguest")
     config.vbguest.auto_update = false
