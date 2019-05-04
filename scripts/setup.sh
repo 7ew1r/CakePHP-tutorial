@@ -26,7 +26,3 @@ sudo systemctl start mysqld
 # setup Database
 mysql -u root < /home/vagrant/workdir/scripts/db_init.sql
 
-# install
-cd workdir
-curl -s https://getcomposer.org/installer | php
-php composer.phar install
