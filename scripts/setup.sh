@@ -24,9 +24,5 @@ sudo yum install -y MariaDB-server MairaDB-client
 sudo systemctl start mysqld
 
 # setup Database
-mysql -u root < /home/vagrant/cms/scripts/db_init.sql
+mysql -u root < /home/vagrant/workdir/scripts/db_init.sql
 
-# 
-cd cms
-curl -s https://getcomposer.org/installer | php
-php composer.phar install
